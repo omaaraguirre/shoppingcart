@@ -15,7 +15,7 @@ const Products = () => {
         filteredProducts.map(product => (
           <div
             key={product.id}
-            className='flex items-center gap-4 p-3 bg-black/80 rounded-sm text-white relative'
+            className='flex gap-4 p-3 bg-black/80 rounded-sm text-white relative'
           >
             <img
               src={product.image}
