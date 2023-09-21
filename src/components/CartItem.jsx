@@ -1,11 +1,10 @@
-
 const CartItem = ({ product, addToCart, removeFromCart }) => {
   return (
     <li className='border-b border-zinc-700 py-2 flex items-center gap-2 text-md'>
       <img
         src={product.image}
         alt={product.title}
-        className='w-16 object-contain'
+        className='w-16 h-16 bg-white aspect-square object-contain rounded-xl'
       />
       <div>
         <p className=' leading-4 line-clamp-2'>{product.title}</p>

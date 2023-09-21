@@ -16,7 +16,7 @@ const ShoppingCart = () => {
         {open ? <Xmark /> : <Cart />}
       </button>
 
-      <aside className={`flex flex-col items-center gap-2 bg-black/90 text-white px-4 py-12 fixed right-0 top-0 w-52 z-40 ${open ? 'h-full opacity-100 translate-x-0' : 'h-0 opacity-0 translate-x-56'} transition-all duration-300`}>
+      <aside className={`flex flex-col items-center gap-2 bg-black/90 text-white px-4 py-12 fixed right-0 top-0 w-60 z-40 ${open ? 'h-full opacity-100 translate-x-0' : 'h-0 opacity-0 translate-x-56'} transition-all duration-300`}>
         <ul className='flex flex-col gap-2'>
           {
             cart.length > 0

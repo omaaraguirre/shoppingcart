@@ -13,7 +13,7 @@ const Filters = () => {
   }
 
   return (
-    <div className='flex flex-col sm:flex-row gap-5 justify-between items-center bg-black/80 p-3'>
+    <div className='flex flex-col sm:flex-row gap-5 justify-between items-center bg-zinc-800 p-3 rounded-xl'>
       <label className='flex gap-2'>
         Max Price
         <input

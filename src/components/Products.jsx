@@ -15,12 +15,12 @@ const Products = () => {
         filteredProducts.map(product => (
           <div
             key={product.id}
-            className='flex gap-4 p-3 bg-black/80 rounded-sm text-white relative'
+            className='flex gap-4 p-3 bg-zinc-800 rounded-sm text-white relative'
           >
             <img
               src={product.image}
               alt={product.title}
-              className='w-32 max-h-40 object-contain'
+              className='w-32 h-32 bg-white object-contain rounded-xl'
             />
             <div className='flex-1 flex flex-col gap-3 text-xs'>
               <ProductRate rate={product.rating.rate} count={product.rating.count} />
