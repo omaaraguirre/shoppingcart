@@ -3,7 +3,7 @@ import { CartReducer, CartInitialState } from '../reducers/CartReducer'
 
 export const CartContext = createContext()
 
-export const CartProvider = ({ children }) => {
+const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(CartReducer, CartInitialState)
 
   const addToCart = product => dispatch({
@@ -32,3 +32,5 @@ export const CartProvider = ({ children }) => {
     </CartContext.Provider>
   )
 }
+
+export default CartProvider

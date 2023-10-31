@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { AddToCart as AddIcon, Cart } from './Icons'
 import useCart from '../hooks/useCart'
+import { AddToCart as AddIcon, Cart } from './Icons'
 
 const AddToCartButton = ({ product }) => {
   const [hover, setHover] = useState(false)
@@ -10,7 +10,7 @@ const AddToCartButton = ({ product }) => {
 
   return (
     <button
-      className='absolute bottom-3 right-3 flex items-center gap-1 overflow-hidden'
+      className='absolute bottom-3 right-3 flex items-center gap-1 overflow-hidden py-2'
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       onClick={() => addToCart(product)}

@@ -2,7 +2,12 @@
 export default {
   content: ['index.html', './src/**/*.jsx'],
   theme: {
-    extend: {}
+    extend: {
+      fontFamily: {
+        Orbitron: ['Orbitron Variable', 'sans-serif'],
+        Comfortaa: ['Comfortaa Variable', 'sans-serif']
+      }
+    }
   },
   plugins: []
 }
